@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Sailor Scouts</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header id="header" style="background-color: red;">
+        <h1 style="color:pink;">Sailor Scouts</h1>
+        <nav>
+            <ul>
+                <li>
+                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main style="background-color: pink;">
+        <h2 style="color: red;">Find Out Who All The Sailor Scouts are</h2>
+        <!-- Images to open light box -->
+        <div class="row">
+            <div class="column">
+                <img src="images/Mercury.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/Mars.jpg"  onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/Jupiter.jpg"  onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/Venus.jpg"  onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/Serena.jpg"  onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="sailorModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="scouts">
+                    <div class="text">
+                       Sailor Mercury
+                    </div>
+                    <img src="images/Mercury.jpg" alt="" style="height:100%">
+                </div>
+                <div class="scouts">
+                        <div class="text">
+                            Sailor Mars
+                        </div>
+                        <img src="images/Mars.jpg" alt="" style="height:100%">
+                </div>
+                    <div class="scouts">
+                        <div class="text">
+                            Sailor Jupiter
+                        </div>
+                        <img src="images/Jupiter.jpg" alt="" style="height:100%">
+                    </div>
+                    <div class="scouts">
+                        <div class="text">
+                            Sailor Venus
+                        </div>
+                        <img src="images/Venus.jpg" alt="" style="height:100%">
+                    </div>
+                    <div class="scouts">
+                        <div class="text">
+                            Sailor Moon
+                        </div>
+                        <img src="images/Serena.jpg" alt="" style="height:100%">
+                    </div>
+                
+
+                <!-- Next & previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption">
+                    </p>
+                </div>
+
+                <!-- Thumbnail controls -->
+                <div class="column">
+                    <img class="demo" src="images/Mercury.jpg" alt="Sailor Mercury" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/Mars.jpg" alt="Sailor Mars" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/Jupiter.jpg" alt="Sailor Jupiter" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/Venus.jpg" alt="Sailor Venus" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/Serena.jpg" alt="Sailor Moon" onclick="currentSlide(5)">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer id="footer">
+        
+    </footer>
+    
+    
+</body>
+</html>
