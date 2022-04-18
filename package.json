@@ -1,0 +1,19 @@
+{
+  "name": "sailor_scouts",
+  "version": "1.0.0",
+  "description": "Find out information on these mysterious crusaders of justice.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdothman/Sailor_Scouts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdothman/Sailor_Scouts/issues"
+  },
+  "homepage": "https://github.com/mdothman/Sailor_Scouts#readme"
+}
